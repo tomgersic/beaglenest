@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NEST Log</title>
+
+    <!-- styles -->
+    <link href="/css/app.css" rel="stylesheet">
+
+  	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'></script>
+  	<script type='text/javascript'>
+  		$(function() {
+  			$('table tr:nth-child(odd)').addClass('odd-row');
+  			$('table td:first-child, table th:first-child').addClass('first');
+  			$('table td:last-child, table th:last-child').addClass('last');
+  		});
+  	</script>
+
+  </head>
+  <body>
+  	<div id='content'>
+  		<table cellspacing='0'>
+  			<tr><th>Server Time</th><th>Value</th></tr>  			
+    		<%- body %>
+    	</table>
+    </div>
+  </body>
+</html>
